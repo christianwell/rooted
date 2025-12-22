@@ -19,7 +19,7 @@
             <div class="org-content">
                 <img src="/profilepic/christian.png" alt="Christian's Profile Picture" class="org-pic">
                 <p class="faq-answer">
-                    Christian is the Lead Organiser for Rooted. He has worked on lots of YSWS's before and is excited to bring Rooted to life.
+                    Christian is the Lead Organiser for Rooted. He has worked on lots of YSWSs before and is excited to bring Rooted to life.
                 </p>
             </div>
         </div>
