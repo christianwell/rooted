@@ -91,7 +91,7 @@
                     <div class="org-content">
                         <img src="/profilepic/freddie.jpeg" alt="Freddie's Profile Picture" class="org-pic">
                     <p class="faq-answer">
-                        Freddie is one of the Co-Organiser for Rooted. He loves coding and is excited to help out with Rooted
+                        Freddie is one of the Co-Organiser for Rooted. He loves coding and is excited to help out with Rooted.
                     </p>
                     </div>
                 </div>
