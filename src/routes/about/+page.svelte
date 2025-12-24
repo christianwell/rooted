@@ -1,5 +1,48 @@
-<script>
+<script lang="ts">
+    import { onMount } from 'svelte';
+    
     let bornhackOpen = $state(false);
+    
+    interface TeamMember {
+        id: string;
+        name: string;
+        avatar: string;
+        description: string;
+    }
+    
+    const teamIds = [
+        { id: 'U08NXJL86KT', description: 'Frog is one of the organisers' },
+        { id: 'U0938MZG8Q6', description: 'Christian is big boss' },
+        { id: 'U059VC0UDEU', description: 'Mahad is sigma.' },
+        { id: 'U078VN0UU2K', description: 'Freddie.' },
+    ];
+    
+    let team: TeamMember[] = $state([]);
+    
+    onMount(async () => {
+        const members: TeamMember[] = [];
+        for (const member of teamIds) {
+            if (!member.id) {
+                members.push({ id: '', name: 'Name Here', avatar: 'https://via.placeholder.com/80', description: member.description });
+                continue;
+            }
+            try {
+                const res = await fetch(`http://localhost:5000/api/slack/user/${member.id}`);
+                if (res.ok) {
+                    const data = await res.json();
+                    members.push({
+                        id: member.id,
+                        name: data.name,
+                        avatar: data.avatar,
+                        description: member.description
+                    });
+                }
+            } catch (e) {
+                members.push({ id: member.id, name: 'Unknown', avatar: 'https://via.placeholder.com/80', description: member.description });
+            }
+        }
+        team = members;
+    });
 </script>
 
 <style>
@@ -87,6 +130,21 @@
                 to connect with other hackers heading to BornHack! 
                 <span class="wip-note">This is currently a work-in-progress.</span>
             </p>
+        </div>
+
+        <div class="team-section">
+            <h2 class="section-title">Who are we?</h2>
+            <div class="team-grid">
+                {#each team as member}
+                    <div class="team-member">
+                        <img src={member.avatar} alt={member.name} class="team-avatar" />
+                        <div class="team-info">
+                            <h3 class="team-name">{member.name}</h3>
+                            <p class="team-description">{member.description}</p>
+                        </div>
+                    </div>
+                {/each}
+            </div>
         </div>
     </div>
 </div>
