@@ -42,7 +42,7 @@
 </svelte:head>
 
 <style> 
-    @import "./styles.css";
+    @import "../styles.css";
 </style>
 
 {#if !pageLoaded}

@@ -4,7 +4,7 @@
 
 ## About
 
-Rooted is the RSVP and information website for Hack Club's trip to [BornHack 2026](https://bornhack.dk), an annual week-long hacker camp held on the Danish island of Funen. This project tracks RSVPs, displays live statistics, and provides information about the event.
+Rooted is a work-in-progress YSWS (You Ship, We Ship) event sponsored by Hack Club, taking place at BornHack 2026.
 
 ## Features
 
@@ -51,7 +51,7 @@ npm run preview
 
 ## Contributing
 
-We welcome contributions! Feel free to open issues or submit pull requests.
+We welcome contributions! Feel free to open issues or submit pull requests. Take a look at the ```Contributing``` and ```Code of Conduct``` first!
 
 ## License
 
