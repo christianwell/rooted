@@ -111,50 +111,6 @@
                             We have a dedicated team of teen hackers working with Hack Club to make Rooted happen!
                         </p>
                     </div>
-<<<<<<< HEAD
-                <div class="faq-item">
-                    <h2 class="faq-question">Christian</h2>
-                    <div class="org-content">
-                        <img src="/profilepic/christian.png" alt="Christian's Profile Picture" class="org-pic">
-                        <p class="faq-answer">
-                            Christian is the Lead Organizer for Rooted. He has worked on many YSWS events before and is excited to bring Rooted to life.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <h2 class="faq-question">Mahad</h2>
-                    <div class="org-content">
-                        <img src="/profilepic/mahad.png" alt="Mahad's Profile Picture" class="org-pic">
-                    <p class="faq-answer">
-                        Mahad is one of the Co-Organizers for Rooted. He is an amazing developer and also works for Hack Club.
-                    </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <h2 class="faq-question">Freddie</h2>
-                    <div class="org-content">
-                        <img src="/profilepic/freddie.jpeg" alt="Freddie's Profile Picture" class="org-pic">
-                    <p class="faq-answer">
-                        Freddie is one of the Co-Organizers for Rooted. He loves coding and is excited to help out with Rooted.
-                    </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <h2 class="faq-question">Frog</h2>
-                    <div class="org-content">
-                        <img src="/profilepic/frog.png" alt="Frog's Profile Picture" class="org-pic">
-                    <p class="faq-answer">
-                        Frog is one of the Co-Organizers for Rooted. He is a great member of the team and is always ready to help.
-                    </p>
-                    </div>
-                </div>
-
-                            
-                </div>
-=======
                     <div class="team-grid">
                         {#each team as member}
                             <div class="team-member">
@@ -167,7 +123,6 @@
                         {/each}
                     </div>
                 </div>
->>>>>>> 5e80267 (should work now)
             {/if}
         </div>
         <br>
